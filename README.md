@@ -1,4 +1,4 @@
-# 💰 Crypto Price Checker – Code Summary
+## README: Crypto Price Checker
 
 A Python program that lets users check cryptocurrency prices, add new coins, and loop interactively.
 
@@ -19,7 +19,49 @@ A Python program that lets users check cryptocurrency prices, add new coins, and
 
 ## 🧠 Key Code Concepts
 
+| Concept | How it's used |
+|---------|----------------|
+| Dictionaries | Store coin → price mappings |
+| `while True` | Create interactive loops |
+| `.lower()` | Make input case‑insensitive |
+| `.title()` | Display coins nicely |
+| f‑strings | Format output with variables |
+| `:,.2f` | Format prices as currency |
+| `in ['yes','y']` | Accept multiple affirmative answers |
+| `float(input(...))` | Convert price input to a number |
 
+---
+
+## 📤 Output Examples
+
+### Showing a price
+```
+The price of Bitcoin is $64,500.50
+```
+
+### Adding a coin
+```
+Added "Dogecoin" to your list.
+```
+
+### Exit message
+```
+Thanks for using this price-checker.
+
+╰(*°▽°*)╯
+```
+
+---
+
+## 🧪 Error Handling
+
+| User action | Program response |
+|-------------|------------------|
+| Types a coin not in dictionary | `Sorry, "X" is not in our database` |
+| Types invalid yes/no answer | Re‑asks the question |
+| Types `None` / `quit` | Exits the price check loop |
+
+---
 
 ## ✅ Key Takeaways
 
@@ -31,10 +73,21 @@ A Python program that lets users check cryptocurrency prices, add new coins, and
 | `.title()` | Display coins nicely |
 | f‑strings | Format output with variables |
 | `:,.2f` | Format prices as currency |
-| `coin.title()` | Capitalizes first letter of each word |
-| `{price:,.2f}` | Adds thousands separator and 2 decimal places |
-| `.lower()` | Makes input case‑insensitive |
-| `in ['yes','y']` | Accepts multiple affirmative answers |
-| `float(input(...))` | Converts price input to a number |
 
 ---
+
+## 📁 Project Status
+
+| Feature | Status |
+|---------|--------|
+| Display available coins | ✅ |
+| Add new coins | ✅ |
+| Check coin prices | ✅ |
+| Error handling (invalid coin) | ✅ |
+| Error handling (invalid yes/no) | ✅ |
+| Exit gracefully | ✅ |
+
+---
+
+> *Last updated: May 2026*
+```
